@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: #f6f3e9;
+    overflow-y: scroll;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px; /* فوق/تحت = 23px */
+  margin: 10px 180px 64px 180px ; /* يمين/يسار = 180px */
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+  background: transparent; /* مهم */
+  padding: 0;
+}
+
+.navbar a {
+color: #8F6F56;
+font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 155.556% */
+letter-spacing: -0.45px;
+text-decoration: none;
+}
+.navbar nav a {
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+.navbar nav a:hover {
+  background: #e6ddcf;
+}
+
+.logo img {
+  width:70px;
+  margin-right: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-size: 16px;
+  color: #8F6F56;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: -0.45px;
+}
+
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+.start-btn {
+  background: #3f5d2a;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.main-container {
+    width: 80%;
+    margin: auto;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -60px;
+}
+
+h1 {
+    color: #364D1B;
+    text-align: center;
+    font-family: "Noto Serif";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: -10px; 
+}
+
+.subtitle {
+    color: #44483D;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 560px;
+    padding: 0 85px; 
+}
+
+/* ASK BOX */
+.ask-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    color: #5B412B;
+    font-family: "Noto Serif";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+
+}
+
+.ask-box select,
+.ask-box textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 32px;
+   background: #F7F4E9;
+}
+.ask-box img{
+    margin-right: 4px;
+  width: 16px;
+  height: 16px;
+}
+.ask-box p {
+    color: #44483D;
+font-family: "Plus Jakarta Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; 
+margin-bottom: -8px;
+}
+
+.ask-box textarea {
+    height: 100px;
+}
+
+.send-btn {
+    float: right;
+    margin-top: 15px;
+    background: #4D6530;
+    color: white;  
+    padding: 10px 20px;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(54, 77, 27, 0.20), 0 4px 6px -4px rgba(54, 77, 27, 0.20);
+}
+
+.tabs {
+    margin: 20px 0;
+}
+
+.tabs button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.tabs .active {
+    background: #4D6530;
+    color: white;
+}
+
+/* QUESTIONS */
+.questions-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    margin: 0;
+}
+
+.card p {
+    color: #555;
+}
+@media (max-width: 900px) {
+  .main-grid { grid-template-columns: 1fr 1fr; }
+  .sacred-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .main-grid { grid-template-columns: 1fr; padding: 0 12px 20px; }
+  .sacred-grid { grid-template-columns: repeat(2, 1fr); }
+  nav { padding: 0 16px; }
+  .nav-links { display: none; }
+  .page-header h1 { font-size: 30px; }
+}

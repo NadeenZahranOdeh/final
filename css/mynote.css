@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: #f4f1e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* container */
+.notes-container {
+    width: 479px;
+}
+
+/* card */
+.notes-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* مهم */
+}
+
+.title-group {
+    color: var(--green, #4D6530);
+    font-family: "Noto Serif";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 120% */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* يخليهم تحت بعض */
+}
+
+.subtitle {
+   margin-top: 0px;
+   color: var(--green, #4D6530);
+   font-family: "Noto Serif";
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 12px; /* 85.714% */
+}
+
+.close {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* image */
+.image-box img {
+    width: 207px;
+    margin: 32px;
+}
+
+/* empty */
+.empty-title {
+    color: var(--green, #4D6530);
+    font-family: "Noto Serif";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+    margin-bottom: 8px;
+}
+
+.empty-sub {
+    color: var(--green, #4D6530);
+    font-family: "Noto Serif";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 85.714% */
+    margin-top: 0px;
+}
+
+/* button */
+.add-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background: #5c6c44;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.add-btn:hover {
+    background: #4D6530;
+    box-shadow: 0 10px 15px -3px rgba(54, 77, 27, 0.10), 0 4px 6px -4px rgba(54, 77, 27, 0.10);
+}
+
+/* popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.popup-buttons button {
+    padding: 8px 15px;
+    border: none;
+    background: #5c6c44;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* الشريط */
+.option-bar {
+    background: #5c6c44;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* كرت النوت */
+.note-card {
+    background: #e6e1cf;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.note-card h4 {
+    margin: 0;
+    color: #2d2d2d;
+}
+
+.note-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+/* الإدخال */
+.add-note-box {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.add-note-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.add-note-box button {
+    padding: 10px 15px;
+    background: #5c6c44;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+@media (max-width: 900px) {
+  .main-grid { grid-template-columns: 1fr 1fr; }
+  .sacred-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .main-grid { grid-template-columns: 1fr; padding: 0 12px 20px; }
+  .sacred-grid { grid-template-columns: repeat(2, 1fr); }
+  nav { padding: 0 16px; }
+  .nav-links { display: none; }
+  .page-header h1 { font-size: 30px; }
+}
+

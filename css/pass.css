@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: #4D6530;
+    --brown: #8F6F56;
+    --beige: #C5C0A9;
+}
+
+body {
+    background: url("../image/ground.svg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;  
+}
+
+.main-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    gap: 170px;
+    box-sizing: border-box; 
+}
+
+/* ===== LEFT SIDE ===== */
+.form-section {
+    padding-left: 120px;
+    padding-top: 271px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;      
+}
+.title-wrapper {
+    display: flex;       
+    align-items: center;    
+    justify-content: flex-start; 
+    gap: 10px;              
+    width: 100%;
+    margin-bottom: 8px;     
+}
+
+.title {
+    margin: 0; 
+    color: var(--green);
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;   
+}
+
+.success-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0;              
+}
+
+.subtitle {
+    color: var(--brown);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 32px;
+    text-align: left;
+    max-width: 500px;
+}
+
+
+.btn-primary {
+    width: 100%;
+    width: 537px;
+    height: 60px;
+    border-radius: 18px;
+    background: var(--green);
+    opacity: 0.9;
+    padding: 16.5px 0 17.5px 0;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 32px;
+    color: var(--beige);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none; 
+    justify-content: center;
+}
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.support-text {
+    color: var(--green);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 33px;
+}
+
+.support-text a {
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: underline;
+    color: var(--green);
+    font-family: 'Inter', sans-serif;
+    line-height: 25px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+/* ===== RIGHT SIDE ===== */
+.brand-section {
+    flex: 1;
+    position: relative;
+    margin-top: 100px;
+} 
+
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 350px;
+}
+
+.slogan {
+    width: 300px;
+    margin-top: -15px;
+}
+
+ .hero-scene {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* الشيخ */
+.hero-character {
+    height: 580px;
+    width: 500px;
+    z-index: 3;
+    padding-right: 230px;
+    padding-bottom: 130px;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 0;
+    right: -160px;
+    width: 700px;
+    z-index: 2;
+    opacity: 0.4;
+    padding-right: 280px;
+    padding-bottom: 120px;
+}
+
+.bottom-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.bottom-shape svg {
+    width: 650px;  /* 👈 تحكمي بالحجم */
+    height: 450px;
+    display: block;
+}
+@media (max-width: 900px) {
+  .main-grid { grid-template-columns: 1fr 1fr; }
+  .sacred-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .main-grid { grid-template-columns: 1fr; padding: 0 12px 20px; }
+  .sacred-grid { grid-template-columns: repeat(2, 1fr); }
+  nav { padding: 0 16px; }
+  .nav-links { display: none; }
+  .page-header h1 { font-size: 30px; }
+}
