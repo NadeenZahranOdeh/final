@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prayer Learning Journey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/prayerjourney.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo img"><img src="image/logo.svg"></div>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="askquastion.html">Ask Question</a></li>
+      <li><a href="feedback.html" id="feedbackBtn">Send Feedback</a></li>
+      <li><a href="mynote.html">My Notes</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="achievement.html">Achievements</a></li>
+    </ul>
+ <!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- FEEDBACK DROPDOWN -->
+<div class="feedback-dropdown" id="feedbackDropdown">
+
+    <div class="feedback-icon">
+        🌿
+    </div>
+
+    <h2>How are we doing?</h2>
+
+    <p class="subtitle">
+        Your feedback helps us grow this spiritual sanctuary.
+    </p>
+
+    <div class="stars">
+        ★ ★ ★ ★ ☆
+    </div>
+
+    <span class="rating-text">Very Good</span>
+
+    <textarea 
+    placeholder="Share your thoughts or suggestions..."></textarea>
+
+    <button class="send-btn" id="sendFeedbackBtn">
+        Send Feedback
+    </button>
+
+    <button class="cancel-btn" id="cancelBtn">
+        Cancel
+    </button>
+
+</div>
+<!-- THANK YOU POPUP -->
+
+<div class="thankyou-popup" id="thankyouPopup">
+
+    <div class="thank-icon">♡</div>
+
+    <h2>Thank you for your feedback</h2>
+
+    <p>
+        Your contribution is highly appreciated.
+    </p>
+
+    <button class="home-btn" id="backHomeBtn">
+        Back to Home
+    </button>
+
+</div>
+    div class="nav-buttons">
+    <a href="login.html">Login</a>
+    <a class="btn-primary" href="homepage.html">
+        Start Learning
+    </a>
+
+    <!-- Notification -->
+    <div class="notification-wrapper">
+        <img
+        src="image/bell.svg"
+        class="notification-icon"
+        alt="Notifications">
+        <span class="notification-badge">
+            3
+        </span>
+    </div>
+    <!-- Profile -->
+    <a href="Edit Profile.html" class="nav-avatar">
+        <img
+        src="image/زينة.jpeg"
+        id="navbarUserImage"
+        alt="Profile">
+    </a>
+</div>
+
+    <!-- Mobile hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="askquestion.html" onclick="closeMobileMenu()">Ask Question</a></li>
+      <li><a href="feedback.html" onclick="closeMobileMenu()">Send Feedback</a></li>
+      <li><a href="mynote.html" onclick="closeMobileMenu()">My Notes</a></li>
+      <li><a href="community.html" onclick="closeMobileMenu()">Community</a></li>
+      <li><a href="achievement.html" onclick="closeMobileMenu()">Achievements</a></li>
+      <li class="mobile-divider"></li>
+      <li><a href="#" onclick="closeMobileMenu()">Login</a></li>
+      <li><a href="#" class="mobile-start" onclick="closeMobileMenu()">Start Learning</a></li>
+    </ul>
+  </div>
+  <div class="mobile-backdrop" id="mobileBackdrop" onclick="closeMobileMenu()"></div>
+  <header class="hero">
+    <h1>Prayer Learning Journey</h1>
+    <p>A sacred path toward mastering the cornerstone of faith. Walk <br>through each station with intention and reflection.</p>
+  </header>
+  <!-- ═══════════════════════════════════════════
+       JOURNEY
+  ═══════════════════════════════════════════ -->
+  <main class="journey" id="journey">
+    <!-- SVG path drawn by JS -->
+    <svg class="journey-path" id="journeyPath" aria-hidden="true"></svg>
+    <!--
+      data-status values: done | inprogress | locked
+      data-step  : step number (1–12)
+      data-title : lesson title (used in detail panel)
+      data-desc  : lesson description (used in detail panel)
+    -->
+    <div class="first-sheikh" id="firstSheikh">
+    <div class="char-img"><img src="image/ماهي الصلاة.svg"/></div>
+    </div>
+    <!-- STEP 1 — done, LEFT -->
+    <div class="step left done-step"
+         data-step="1" data-status="done"
+         data-title="What is Prayer?"
+         data-desc="Discover the essence of Salah — its definition, purpose, and its place as the second pillar of Islam. Understand why prayer is the foundation of a Muslim's relationship with Allah.">
+      <div class="status-circle done"></div>
+      <a class="step-card" href="lesson1.html">
+        <div class="step-label">Step 1</div>
+        <div class="step-title">What is Prayer?</div>
+      </a>
+    </div>
+
+    <!-- STEP 2 — done, RIGHT -->
+    <div class="step right done-step"
+         data-step="2" data-status="done"
+         data-title="Virtue of Prayer"
+         data-desc="Explore the immense rewards and spiritual virtues of establishing prayer. Learn from Hadith and Quran the blessings awaiting those who pray regularly.">
+      <div class="status-circle done"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 2</div>
+        <div class="step-title">Virtue of Prayer</div>
+      </a>
+      <div class="char-bubble">
+        <div class="char-img"><img src="image/Virtue of Prayer.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 3 — done, LEFT -->
+    <div class="step left done-step"
+         data-step="3" data-status="done"
+         data-title="When Was Prayer Prescribed?"
+         data-desc="Journey back to the Night of Ascension (Isra & Mi'raj) and learn the miraculous story of how the five daily prayers were ordained upon the believers.">
+      <div class="status-circle done"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 3</div>
+        <div class="step-title">When Was Prayer Prescribed?</div>
+      </a>
+      <div class="char-bubble">
+        <div class="char-img"><img src="image/متى فرضت الصلاة.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 4 — inprogress, RIGHT -->
+    <div class="step right inprogress-step"
+         data-step="4" data-status="inprogress"
+         data-title="Ruling of Abandoning Prayer"
+         data-desc="Understand the serious ruling regarding abandoning Salah and the difference of scholarly opinion. This lesson clarifies the obligation and its consequences.">
+      <div class="status-circle inprogress"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 4</div>
+        <div class="step-title">Ruling on Abandoning Prayer</div>
+        <div class="step-badge">★ In Progress</div>
+      </a>
+      <div class="char-bubble">
+        <div class="char-img"><img src="image/حكم ترك الصلاة.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 5 — locked, LEFT -->
+    <div class="step left locked-step"
+         data-step="5" data-status="locked"
+         data-title="Conditions of Prayer"
+         data-desc="Learn the prerequisites that must be fulfilled before beginning Salah, including purity, covering the 'awrah, facing the Qiblah, and entering the prayer time.">
+      <div class="status-circle locked"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 5</div>
+        <div class="step-title">Conditions of Prayer</div>
+      </a>
+      <div class="char-bubble locked">
+        <div class="char-img"><img src="image/شروط الصلاة.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 6 — locked, RIGHT -->
+    <div class="step right locked-step"
+         data-step="6" data-status="locked"
+         data-title="Pillars of Prayer"
+         data-desc="Master the essential pillars (Arkan) of Salah — the actions without which the prayer is invalid. From the opening Takbir to the final Tashahhud.">
+      <div class="status-circle locked"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 6</div>
+        <div class="step-title">Pillars of Prayer</div>
+      </a>
+      <div class="char-bubble locked">
+        <div class="char-img"><img src="image/اوقات الصلاة.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 7 — locked, LEFT -->
+    <div class="step left locked-step"
+         data-step="7" data-status="locked"
+         data-title="Obligatory Acts of Prayer"
+         data-desc="Distinguish between the pillars and the obligatory acts (Wajibat) of prayer — what must be done and what happens if they are missed intentionally or unintentionally.">
+      <div class="status-circle locked"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 7</div>
+        <div class="step-title">Pillars of Prayer (Arkan)</div>
+      </a>
+      <div class="char-bubble locked">
+        <div class="char-img"><img src="image/step7.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 8 — locked, RIGHT -->
+    <div class="step right locked-step"
+         data-step="8" data-status="locked"
+         data-title="Sunnah Acts of Prayer"
+         data-desc="Discover the recommended (Sunnah) acts that beautify your Salah and bring additional reward. Learn how the Prophet ﷺ would perfect each moment of prayer.">
+      <div class="status-circle locked"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 8</div>
+        <div class="step-title">Obligatory Acts (Wajibat)</div>
+      </a>
+      <div class="char-bubble locked">
+        <div class="char-img"><img src="image/step8.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 9 — locked, LEFT -->
+    <div class="step left locked-step"
+         data-step="9" data-status="locked"
+         data-title="How to Perform Prayer"
+         data-desc="A step-by-step guide to performing the five daily prayers correctly — from Wudu to the final Salam, with transliteration and translations of all recitations.">
+      <div class="status-circle locked"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 9</div>
+        <div class="step-title">Sunnah and Recommended Acts</div>
+      </a>
+      <div class="char-bubble locked">
+        <div class="char-img"><img src="image/افعال مستحبة.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 10 — locked, RIGHT -->
+    <div class="step right locked-step"
+         data-step="10" data-status="locked"
+         data-title="Prayer Times"
+         data-desc="Understand the prescribed times for each of the five daily prayers, the preferred times, and the times that are disliked for prayer.">
+      <div class="status-circle locked"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 10</div>
+        <div class="step-title">Disliked Acts (Makrooh)</div>
+      </a>
+      <div class="char-bubble locked">
+        <div class="char-img"><img src="image/افعال مكروهه.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 11 — locked, LEFT -->
+    <div class="step left locked-step"
+         data-step="11" data-status="locked"
+         data-title="Prayer in Congregation"
+         data-desc="Explore the great virtue of praying in Jama'ah (congregation) and the rules associated with leading and following in prayer at the mosque.">
+      <div class="status-circle locked"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 11</div>
+        <div class="step-title">Invalidators of Prayer</div>
+      </a>
+      <div class="char-bubble locked">
+        <div class="char-img"><img src="image/مبطلات الصلاة.svg"/></div>
+      </div>
+    </div>
+
+    <!-- STEP 12 — locked, RIGHT -->
+    <div class="step right locked-step"
+         data-step="12" data-status="locked"
+         data-title="Khushu' in Prayer"
+         data-desc="The crown of Salah — Khushu' (humility and focus). Learn practical ways to attain full presence of heart and mind while standing before Allah.">
+      <div class="status-circle locked"></div>
+      <a class="step-card" href="#">
+        <div class="step-label">Step 12</div>
+        <div class="step-title">How to Perform Prayer</div>
+      </a>
+      <div class="char-bubble locked">
+        <div class="char-img"><img src="image/كيفية اداء الصلاة.svg"/></div>
+      </div>
+    </div>
+
+  </main><!-- /journey -->
+
+
+  <!-- ═══════════════════════════════════════════
+       CONGRATULATIONS
+  ═══════════════════════════════════════════ -->
+  <section class="congrats">
+    <div class="congrats-icon"><img src="image/النهاية.svg"/></div>
+    <h2>You have completed the<br />Prayer Learning Journey!</h2>
+    <p>“May Allah make your prayers full of peace, sincerity, and light.”</p>
+    <button class="btn-claim">Claim Your Certificate 🎓</button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DETAIL OVERLAY
+  ═══════════════════════════════════════════ -->
+  <div class="detail-overlay" id="detailOverlay">
+    <div class="detail-panel">
+      <button class="detail-close" id="detailClose">✕</button>
+      <div class="detail-char" id="detailChar"><img src="image/shaikh.png"/></div>
+      <div class="detail-step-num" id="detailNum">Step 1</div>
+      <div class="detail-title" id="detailTitle"></div>
+      <div class="detail-desc" id="detailDesc"></div>
+      <button class="btn-begin" id="detailBegin"></a>Begin Lesson → </button>
+    </div>
+  </div>
+
+  <script src="js/prayerjourney.js"></script>
+</body>
+</html>

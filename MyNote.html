@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes Page</title>
+<link rel="stylesheet" href="css/mynote.css">
+</head>
+<body>
+
+<div class="notes-container">
+
+    <div class="notes-card">
+        <div class="header">
+    <div class="title-group">
+        <h1>My Notes</h1>
+        <p class="subtitle">Capture your thoughts ♡</p>
+    </div>
+    <span class="close">×</span>
+</div>
+
+
+        <div class="image-box">
+            <img src="image/mynote.svg" alt="notes">
+        </div>
+
+        <h2 class="empty-title">No notes yet</h2>
+        <p class="empty-sub">Start capturing your thoughts and reflections</p>
+
+       <button class="add-btn" onclick="openChoicePopup()">
+             <img src="image/New Note.svg" alt="New Note"> New Note
+       </button>
+<div id="noteOptions" class="note-options hidden">
+
+    <div class="option-bar">
+        <span>📄 Article</span>
+        <span>📝 Note Card</span>
+    </div>
+
+    <div id="notesContainer">
+        <!-- النوتات رح تظهر هون -->
+    </div>
+
+    <div class="add-note-box">
+        <input type="text" id="noteInput" placeholder="Write your reflection...">
+        <button onclick="addNote()">Add</button>
+    </div>
+
+</div>
+    </div>
+
+</div>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h3>Your Notes</h3>
+
+        <div id="notesList"></div>
+
+        <textarea id="noteInput" placeholder="Write your note..."></textarea>
+
+        <div class="popup-buttons">
+            <button onclick="addNote()">Save</button>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/mynote.js"></script>
+
+</body>
+</html>

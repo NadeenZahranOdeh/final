@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Settings</title>
+
+  <link rel="stylesheet" href="css/editprofile.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="image/logo.svg"></div>
+    <nav>
+      <a href="askquastion.html">Ask Question</a>
+      <a href="feedback.html">Send Feedback</a>
+      <a href="MyNote.html">My Notes</a>
+      <a href="aboutmuslim.html">About Muslim</a>
+      <a href="achievement.html">Achievements</a>
+    </nav>
+
+    <div class="nav-buttons">
+      <a href="login.html">Login</a>
+      <a class="btn-primary" href="homepage.html"> Start Learning</a>
+
+  <!-- Notifications -->
+  <div class="notification-wrapper">
+      <img src="image/bell.svg" class="notification-icon">
+      <span class="notification-badge">
+        3
+      </span>
+
+  </div>
+  <!-- User Avatar -->
+  <div class="nav-avatar">
+      <img src="image/زينة.jpeg" id="navbarUserImage">
+  </div>
+
+</div>
+  </header>
+
+<div class="page-container">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="profile-info">
+
+        <div class="avatar-wrapper">
+
+            <img
+            src="image/زينة.jpeg"
+            class="avatar"
+            id="profileImage">
+
+            <button
+            type="button"
+            class="edit-avatar">
+                ✎
+            </button>
+
+            <button
+            type="button"
+            class="remove-avatar">
+                🗑
+            </button>
+
+            <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+            hidden>
+
+        </div>
+
+        <h3>Raghad Swaileh</h3>
+        <p>Student</p>
+
+    </div>
+
+    <div class="sidebar-menu">
+
+        <button class="menu-btn active"
+        onclick="showSection('personal')">
+            <img src="image/person.svg">
+            Personal Info
+        </button>
+
+        <button class="menu-btn"
+        onclick="showSection('security')">
+            <img src="image/Security.svg">
+            Security
+        </button>
+
+        <button
+        class="menu-btn logout"
+        onclick="logoutUser()">
+
+            <img src="image/Log out.svg">
+            Logout
+
+        </button>
+
+    </div>
+
+</aside>
+  <!-- CENTER CONTENT -->
+  <main class="main-content">
+
+    <!-- PERSONAL INFO -->
+    <section id="personalSection"
+    class="content-section active-section">
+      <h1>Edit Profile</h1>
+      <p class="subtitle">
+        Manage your personal details and how others see you across the platform.
+      </p>
+
+      <div class="form-grid">
+        <div class="input-group">
+          <label>FULL NAME</label>
+          <input type="text" value="Raghad Swaileh">
+        </div>
+
+        <div class="input-group">
+          <label>EMAIL ADDRESS</label>
+          <input type="email" value="raghadswaileh@gmail.com">
+        </div>
+
+        <div class="input-group">
+          <label>CITY</label>
+          <input type="text" value="Amman">
+        </div>
+
+        <div class="input-group">
+          <label>COUNTRY</label>
+          <input type="text" value="Jordan">
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECURITY -->
+    <section id="securitySection"
+    class="content-section">
+      <h1>Change Password</h1>
+      <p class="subtitle">
+        Update your credentials to keep your account secure and private.
+      </p>
+
+      <div class="form-grid">
+
+        <div class="input-group full-width">
+          <label>CURRENT PASSWORD</label>
+          <input type="password" placeholder="Current password">
+        </div>
+
+        <div class="input-group full-width">
+          <label>NEW PASSWORD</label>
+          <input type="password" placeholder="New password">
+        </div>
+
+        <div class="input-group full-width">
+          <label>CONFIRM PASSWORD</label>
+          <input type="password" placeholder="Repeat password">
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- JOURNEY CARD -->
+    <div class="journey-card">
+
+      <div>
+        <h3>📖 Student Journey</h3>
+
+        <p>
+          Every step you take in learning brings you closer to understanding your faith.
+        </p>
+
+        <small>
+          “Say: Are those who know equal to those who do not know?”
+        </small>
+      </div>
+
+      <img src="image/Student Journey.svg" alt="Quran">
+
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+      <button class="discard">
+        Discard
+      </button>
+      <button class="save">
+        Save Changes
+      </button>
+    </div>
+
+  </main>
+
+  <!-- RIGHT SIDE -->
+  <aside class="right-side">
+
+    <div class="quote-card">
+      <h3>Daily Reflection</h3>
+
+      <p>
+        “My Lord, increase me in knowledge.”
+      </p>
+    </div>
+
+    <div class="progress-card">
+
+      <div class="progress-header">
+        <h3>Your Progress</h3>
+     </div>
+     <p class="progress-subtitle">
+        Keep growing every day.
+     </p>
+
+      <div class="progress-item">
+        <span>Salah</span>
+        <span>60%</span>
+      </div>
+
+      <div class="bar">
+        <div class="fill"
+           style="width:60%">
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <span>Aqeedah</span>
+        <span>30%</span>
+      </div>
+
+      <div class="bar">
+        <div class="fill"
+           style="width:30%">
+        </div>
+      </div>
+      <div class="progress-item">
+        <span>Quran</span>
+        <span>40%</span>
+      </div>
+
+      <div class="bar">
+        <div class="fill second"></div>
+      </div>
+
+    </div>
+
+  </aside>
+
+</div>
+
+<script src="js/editprofile.js"></script>
+
+</body>
+</html>

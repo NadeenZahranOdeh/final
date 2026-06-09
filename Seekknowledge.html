@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ask a Scholar</title>
+<link rel="stylesheet" href="css/seekkowledge.css">
+</head>
+
+<body>
+ <!--  Navbar -->
+  <nav class="navbar">
+    <div class="logo"><img src="image/logo.svg"></div>
+
+    <nav>
+      <a href="seekknowledge.html">Ask Question</a>
+      <a href="feedback.html">Send Feedback</a>
+      <a href="MyNote.html">My Notes</a>
+      <a href="community.html">Community</a>
+      <a href="achievement.html">Achievements</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="login.html" class="login">Login</a>
+      <a href="homepage.html" class="start-btn">Start Learning</a>
+    </div>
+  </nav>
+
+<section class="main-container">
+
+   <div class="title-section">
+    <h1>Seek Knowledge</h1>
+    <p class="subtitle">
+        Connect with verified scholars to deepen your understanding of faith through wisdom and authentic guidance.
+    </p>
+</div>
+
+    <!-- Ask Box -->
+    <div class="ask-box">
+        <img src="image/Ask a Scholar.svg" alt="ink" />
+        <h3>Ask a Scholar</h3>
+       <p>Select Category</p>
+        <select>
+            <option>Prayer (Salah)</option>
+        </select>
+        <p>Your Question</p>
+        <textarea placeholder="Write your question here with as much detail as possible..."></textarea>
+
+        <button class="send-btn">Send Question</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="active">All</button>
+        <button>Answered</button>
+        <button>Pending</button>
+    </div>
+
+    <!-- Questions -->
+    <div class="questions-container" id="questions">
+
+    </div>
+
+</section>
+
+<script src="js/seekknowledge.js"></script>
+</body>
+</html>

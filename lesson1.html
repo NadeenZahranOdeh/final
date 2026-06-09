@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prayer Lesson</title>
+<link rel="stylesheet" href="css/lesson1.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">
+        <img src="image/logo.svg" alt="">
+    </div>
+    <nav>
+        <a href="askquastion.html">Ask Question</a>
+        <a href="feedback.html">Send Feedback</a>
+        <a href="MyNote.html">My Notes</a>
+        <a href="AboutMuslim.html">About Muslim</a>
+        <a href="achievement.html">Achievements</a>
+    </nav>
+    <div class="nav-buttons">
+        <a  class="btn-secondary" href="login.html">Login</a>
+        <a class="btn-primary" href="homepage.html"> Start Learning </a>
+        <div class="notification-wrapper">
+            <img src="image/bell.svg"
+            class="notification-icon">
+            <span class="notification-badge">
+                3
+            </span>
+        </div>
+
+        <a href="editprofile.html"
+        class="nav-avatar">
+            <img src="image/زينة.jpeg">
+        </a>
+    </div>
+</header>
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+    <div class="speech-wrapper">
+        <div class="speech-bubble">
+            "Assalamu Alaikum, my dear student. Today we embark on a journey to understand the heart of worship: Prayer."
+        </div>
+
+        <img src="image/sheikh-leftstep1.svg"
+        class="sheikh">
+
+    </div>
+
+    <div class="lesson-content">
+        <h1>What is Prayer?</h1>
+        <div class="cards">
+            <div class="info-card">
+                <h3>The Definition</h3>
+                <p>
+                    In Islam, Salah (Prayer) is a ritual act of worship that serves as a direct link between a servant and their Creator. It is not merely physical movements but a spiritual dialogue.
+                </p>
+            </div>
+            <div class="info-card">
+                <h3>Why We Pray</h3>
+                <p>
+                    We pray to find peace, to express gratitude, and to seek guidance. It is a moment of stillness in a busy world, allowing our souls to breathe and realign with sacred truth.
+                </p>
+            </div>
+        </div>
+        <div class="ayah-card">
+            <p>
+                "Indeed, prayer prohibits immorality and wrongdoing, and the remembrance of Allah is greater."
+            </p>
+            <small>
+                _Surah Al-Ankabut 
+            </small>
+        </div>
+    </div>
+</section>
+<!-- ================= VIDEO ================= -->
+<section class="video-section">
+    <video controls>
+        <source
+        src="video/prayer.mp4"
+        type="video/mp4">
+
+    </video>
+    <div class="video-guide-card">
+    <div class="guide-bubble">
+        Watch this video carefully to
+        better understand the lesson.
+    </div>
+    <img src="image/sheikh-wave.svg"
+         alt="Sheikh">
+    <h3>Focused Learning</h3>
+    <p>
+        Follow the visual cues to master
+        the spiritual postures of prayer.
+    </p>
+
+</div>
+</section>
+<!-- ================= QUIZ ================= -->
+<section class="quiz-card">
+
+    <div class="quiz-text">
+        <h2>
+            Ready to test your<br/> knowledge?
+        </h2>
+        <p>
+            This quiz covers the essential definitions and the<br/>
+             spiritual importance of prayer that we've discussed
+            so far.
+        </p>
+
+        <a href="game/first.html"
+        class="quiz-btn">
+            Start Quiz →
+        </a>
+    </div>
+<div class="quiz-sheikh">
+    <div class="quiz-bubble">
+        Before moving to the next lesson,
+        you must complete this quiz.
+    </div>
+    <img src="image/sheikh-thinking.svg"
+         alt="Sheikh">
+</div>
+    
+
+</section>
+
+<!-- ================= COMPLETED ================= -->
+
+<section class="completed-card">
+    <h2>
+        Ma Sha Allah! Well Done!
+    </h2>
+    <p>
+        You have successfully completed
+        the foundation module for prayer.
+        Your heart is now ready for the next step.
+    </p>
+    <button id="nextLessonBtn">
+        Continue to Next Lesson
+    </button>
+
+</section>
+
+<script src="js/lesson1.js"></script>
+
+</body>
+</html>

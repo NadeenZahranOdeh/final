@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muslim</title>
+  <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"><img src="image/logo.svg"></div>
+    <nav>
+      <a href="askquastion.html">Ask Question</a>
+      <a href="feedback.html">Send Feedback</a>
+      <a href="MyNote.html">My Notes</a>
+      <a href="#">Community</a>
+      <a href="achievement.html">Achievements</a>
+    </nav>
+    <div class="nav-buttons">
+    <a href="login.html">Login</a>
+    <a class="btn-primary" href="homepage.html">
+        Start Learning
+    </a>
+
+    <!-- Notification -->
+    <div class="notification-wrapper">
+        <img
+        src="image/bell.svg"
+        class="notification-icon"
+        alt="Notifications">
+        <span class="notification-badge">
+            3
+        </span>
+    </div>
+    <!-- Profile -->
+    <a href="Edit Profile.html" class="nav-avatar">
+        <img
+        src="image/زينة.jpeg"
+        id="navbarUserImage"
+        alt="Profile">
+    </a>
+</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Muslim</h1>
+      <p class="subtitle">
+        Your spiritual guide to learning and understanding Islam with clarity and warmth
+      </p>
+
+      <div class="buttons">
+        <a href="#why-islam-section" class="btn-main">
+  <button class="btn-main" style="width: 100%; border: none; background: transparent; color: white; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer;">
+    Why Islam ?
+    <img src="image/Why Islam.svg" class="btn-icon">
+  </button>
+</a>
+         <button class="btn-secondary">
+                Explore Topics
+                <img src="image/Explore Topics.svg" class="btn-icon">
+           </button>
+    </div>
+
+      <div class="ayah">
+        <p class="arabic">
+         ﴾ إِنَّ الدِّينَ عِنْدَ اللَّهِ الْإِسْلَامُ ﴿
+        </p>
+        <p class="translation">
+          "We did not send down the Qur'an to you [Prophet] to cause you distress."
+        </p>
+        <span class="source">SURAH TAHA, VERSE 2</span>
+      </div>
+
+    </div>
+  </section>
+<img src="image/WhatsApp Image 2026-04-01 at 5.55.47 PM 1.png" class="sheikh">
+<!-- Chat Button -->
+<div class="chat-btn" onclick="toggleChat()">
+  💬
+</div>
+
+<!-- Chat Button -->
+<div class="chat-btn" onclick="toggleChat()">
+  💬
+</div>
+
+<!-- Chat Box -->
+<div class="chat-box" id="chatBox">
+  
+  <div class="chat-header">
+    <div>
+      <strong>Al-Hikmah AI</strong><br>
+      <small>Knowledge Assistant</small>
+    </div>
+    <span onclick="toggleChat()">✖</span>
+  </div>
+
+  <div class="chat-body" id="chatBody">
+    <p class="bot">Assalamu Alaikum 🌙<br>Ask me about Salah!</p>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your question...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+<section class="topics">
+  <!-- Topics Section -->
+<section class="topics">
+  <h2>Topics</h2>
+  <p class="topics-subtitle">
+    Explore Islamic topics and deepen your knowledge
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="image/Quran.svg">
+      <div class="default-content">
+        <a href="quran.html"><h3>Quran</h3></a>
+        <p>The divine speech revealed to guide humanity toward light.</p>
+      </div>
+      <div class="hover-links">
+        <a href="quran.html#tafsir"><span>Quran</span></a>
+        <a href="quran.html#stories"><span>Tafsir</span></a>
+        <a href="quran.html#lessons"><span>Stories</span></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/Aqeedah.svg">
+      <div class="default-content">
+        <a href="aqeedah.html"><h3>Aqeedah</h3></a>
+        <p>The bedrock of faith and the correct creed of a believer.</p>
+      </div>
+      <div class="hover-links">
+        <a href="aqeedah.html#iman"><span>Faith</span></a>
+        <a href="aqeedah.html#tawheed"><span>Tawheed</span></a>
+        <a href="aqeedah.html#shirk"><span>Shirk</span></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/Ethics.svg">
+      <div class="default-content">
+        <a href="ethics.html"><h3>Ethics</h3></a>
+        <p>Understanding the proper conduct and moral principles of Islam.</p>
+      </div>
+      <div class="hover-links">
+        <a href="ethics.html#honesty"><span>Honesty</span></a>
+        <a href="ethics.html#patience"><span>Patience</span></a>
+        <a href="ethics.html#integrity"><span>Integrity</span></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/Seerah.svg">
+      <div class="default-content">
+        <a href="seerah.html"><h3>Seerah</h3></a>
+        <p>The inspiring biography of the Prophet Muhammad [PBUH].</p>
+      </div>
+      <div class="hover-links">
+        <a href="seerah.html#prophet"><span>Prophet</span></a>
+        <a href="seerah.html#hadith"><span>Hadith</span></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/Fiqh.svg">
+      <div class="default-content">
+        <a href="fiqh.html"><h3>Fiqh</h3></a>
+        <p>Practical jurisprudence for navigating daily life with wisdom.</p>
+      </div>
+      <div class="hover-links">
+        <a href="prayerjourney.html"><span>Prayer</span></a>
+        <a href="fiqh.html#zakat"><span>Zakat</span></a>
+        <a href="fiqh.html#hajj"><span>Hajj</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="why-islam-section" class="why-islam">
+  <section class="why-wrapper">
+
+  <div class="why-card">
+    
+    <h2>Why Islam?</h2>
+
+    <p class="quote">
+      "Verily, in the remembrance of Allah do hearts find rest."
+    </p>
+
+    <p class="description">
+      Islam provides a comprehensive spiritual framework that addresses the deepest questions of existence. It is a path of balance, emphasizing harmony between the soul, the intellect, and the material world.
+    </p>
+
+    <div class="chips">
+      <span><img src="image/Inner Peace.svg"> Peace</span>
+      <span> <img src="image/Moral Clarity.svg">Moral Clarity</span>
+      <span> <img src="image/Universal Unity.svg">Universal Unity</span>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+function toggleChat() {
+  let chat = document.getElementById("chatBox");
+  chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+}
+
+function sendMessage() {
+  let input = document.getElementById("userInput");
+  let message = input.value.toLowerCase();
+  let body = document.getElementById("chatBody");
+
+  if (message.trim() === "") return;
+
+  // عرض رسالة المستخدم
+  body.innerHTML += `<div class="user">${message}</div>`;
+
+  let response = "I didn't understand. Try asking about Salah 😊";
+
+  if (message.includes("wajibat")) {
+    response = "Wajibat Al-Salah are 8 acts like Takbeerat, Ruku, Sujood, and Tashahhud.";
+  }
+  else if (message.includes("ruku")) {
+    response = "In Ruku you say: Subhana Rabbi Al-Azeem.";
+  }
+  else if (message.includes("sujood")) {
+    response = "In Sujood you say: Subhana Rabbi Al-A'la.";
+  }
+  else if (message.includes("forget") || message.includes("mistake")) {
+    response = "If you forget something, perform Sujood Al-Sahw.";
+  }
+
+  // رد البوت
+  setTimeout(() => {
+    body.innerHTML += `<div class="bot">${response}</div>`;
+    body.scrollTop = body.scrollHeight;
+  }, 500);
+
+  input.value = "";
+}
+</script>
+<script src="js/mynote.js"></script>
+</body>

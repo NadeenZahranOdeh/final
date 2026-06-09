@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muslim</title>
+  <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"><img src="image/logo.svg"></div>
+    <nav>
+      <a href="askquastion.html">Ask Question</a>
+      <a href="#" id="feedbackBtn">Feedback</a>
+      <a href="MyNote.html">My Notes</a>
+      <a href="#">Community</a>
+      <a href="achievement.html">Achievements</a>
+    </nav>
+    <div class="nav-buttons">
+      <a href="login.html">Login</a>
+      <button  class="btn-primary">Start Learning</button>
+    </div>
+ 
+   <!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- FEEDBACK DROPDOWN -->
+<div class="feedback-dropdown" id="feedbackDropdown">
+
+    <div class="feedback-icon">
+        🌿
+    </div>
+
+    <h2>How are we doing?</h2>
+
+    <p class="subtitle">
+        Your feedback helps us grow this spiritual sanctuary.
+    </p>
+
+    <div class="stars">
+        ★ ★ ★ ★ ☆
+    </div>
+
+    <span class="rating-text">Very Good</span>
+
+    <textarea 
+    placeholder="Share your thoughts or suggestions..."></textarea>
+
+    <button class="send-btn" id="sendFeedbackBtn">
+        Send Feedback
+    </button>
+
+    <button class="cancel-btn" id="cancelBtn">
+        Cancel
+    </button>
+
+</div>
+<!-- THANK YOU POPUP -->
+
+<div class="thankyou-popup" id="thankyouPopup">
+
+    <div class="thank-icon">♡</div>
+
+    <h2>Thank you for your feedback</h2>
+
+    <p>
+        Your contribution is highly appreciated.
+    </p>
+
+    <button class="home-btn" id="backHomeBtn">
+        Back to Home
+    </button>
+
+</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Muslim</h1>
+      <p class="subtitle">
+        Your spiritual guide to learning and understanding Islam with clarity and warmth
+      </p>
+
+      <div class="buttons">
+        <button class="btn-main">
+               Why Islam ?
+              <img src="image/Why Islam.svg" class="btn-icon">
+        </button>
+         <button class="btn-secondary">
+                Explore Topics
+                <img src="image/Explore Topics.svg" class="btn-icon">
+           </button>
+    </div>
+
+      <div class="ayah">
+        <p class="arabic">
+         ﴾ إِنَّ الدِّينَ عِنْدَ اللَّهِ الْإِسْلَامُ ﴿
+        </p>
+        <p class="translation">
+          "We did not send down the Qur'an to you [Prophet] to cause you distress."
+        </p>
+        <span class="source">SURAH TAHA, VERSE 2</span>
+      </div>
+
+    </div>
+  </section>
+<img src="image/WhatsApp Image 2026-04-01 at 5.55.47 PM 1.png" class="sheikh">
+<!-- Chat Button -->
+<div class="chat-btn" onclick="toggleChat()">
+  💬
+</div>
+
+<!-- Chat Button -->
+<div class="chat-btn" onclick="toggleChat()">
+  💬
+</div>
+
+<!-- Chat Box -->
+<div class="chat-box" id="chatBox">
+  
+  <div class="chat-header">
+    <div>
+      <strong>Al-Hikmah AI</strong><br>
+      <small>Knowledge Assistant</small>
+    </div>
+    <span onclick="toggleChat()">✖</span>
+  </div>
+
+  <div class="chat-body" id="chatBody">
+    <p class="bot">Assalamu Alaikum 🌙<br>Ask me about Salah!</p>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your question...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+<section class="topics">
+  <!-- Topics Section -->
+<section class="topics">
+
+  <h2>Topics</h2>
+  <p class="topics-subtitle">
+    Explore Islamic topics and deepen your knowledge
+  </p>
+
+  <div class="cards">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="image/Quran.svg">
+      <h3>Quran</h3>
+      <div class="tags">
+        <span>Quran</span>
+        <span>Tafsir</span>
+        <span>Stories</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="image/Aqeedah.svg">
+      <h3>Aqeedah</h3>
+      <div class="tags">
+        <span>Faith</span>
+        <span>Tawheed</span>
+        <span>Shirk</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="image/Ethics.svg">
+      <h3>Ethics</h3>
+      <div class="tags">
+        <span>Honesty</span>
+        <span>Patience</span>
+        <span>Integrity</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="image/Seerah.svg">
+      <h3>Seerah</h3>
+      <div class="tags">
+        <span>Prophet</span>
+        <span>Hadith</span>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <img src="image/Fiqh.svg">
+      <h3>Fiqh</h3>
+      <div class="tags">
+        <span>Prayer</span>
+        <span>Zakat</span>
+        <span>Hajj</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<section class="why-islam">
+  <section class="why-wrapper">
+
+  <div class="why-card">
+    
+    <h2>Why Islam?</h2>
+
+    <p class="quote">
+      "Verily, in the remembrance of Allah do hearts find rest."
+    </p>
+
+    <p class="description">
+      Islam provides a comprehensive spiritual framework that addresses the deepest questions of existence. It is a path of balance, emphasizing harmony between the soul, the intellect, and the material world.
+    </p>
+
+    <div class="chips">
+      <span><img src="image/Inner Peace.svg"> Peace</span>
+      <span> <img src="image/Moral Clarity.svg">Moral Clarity</span>
+      <span> <img src="image/Universal Unity.svg">Universal Unity</span>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+function toggleChat() {
+  let chat = document.getElementById("chatBox");
+  chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+}
+
+function sendMessage() {
+  let input = document.getElementById("userInput");
+  let message = input.value.toLowerCase();
+  let body = document.getElementById("chatBody");
+
+  if (message.trim() === "") return;
+
+  // عرض رسالة المستخدم
+  body.innerHTML += `<div class="user">${message}</div>`;
+
+  let response = "I didn't understand. Try asking about Salah 😊";
+
+  if (message.includes("wajibat")) {
+    response = "Wajibat Al-Salah are 8 acts like Takbeerat, Ruku, Sujood, and Tashahhud.";
+  }
+  else if (message.includes("ruku")) {
+    response = "In Ruku you say: Subhana Rabbi Al-Azeem.";
+  }
+  else if (message.includes("sujood")) {
+    response = "In Sujood you say: Subhana Rabbi Al-A'la.";
+  }
+  else if (message.includes("forget") || message.includes("mistake")) {
+    response = "If you forget something, perform Sujood Al-Sahw.";
+  }
+
+  // رد البوت
+  setTimeout(() => {
+    body.innerHTML += `<div class="bot">${response}</div>`;
+    body.scrollTop = body.scrollHeight;
+  }, 500);
+
+  input.value = "";
+}
+</script>
+<script src="js/mynote.js"></script>
+</body>
+</html>
