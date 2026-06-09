@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wudu Quiz</title>
+<link rel="stylesheet" href="first.css">
+</head>
+<body>
+
+<div class="game">
+    <h1 class="title"> 💧Wudu Quiz</h1>
+    <div class="main">
+        <div class="panel">
+            <h2 id="question"></h2>
+            <div id="answers"></div>
+            <p id="feedback"></p>
+        </div>
+<img src="image/wrong.png" class="sheikh">
+    </div>
+
+    <div class="status">
+        <div class="box">⭐ Score: <span id="score">0</span></div>
+        <div class="box">❤️ Lives: <span id="lives">3</span></div>
+    </div>
+    <button id="restart" class="restart hidden">🔄 Restart</button>
+
+</div>
+<audio id="correctSound" src="correct.wav"></audio>
+<audio id="wrongSound" src="wrong.mp3"></audio>
+<audio id="winSound" src="win.mp3"></audio>
+
+<script src="first.js"></script>
+</body>
+</html>

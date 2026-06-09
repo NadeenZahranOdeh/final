@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to bottom, #248e32, #124524);
+    text-align: center;
+}
+
+.game {
+    padding: 20px;
+    background-image:url( image/Beautiful.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.title {
+    text-align: center;
+    color: rgb(9, 44, 5);
+   
+    font-size: 45px;
+    text-shadow: 2px 2px #ffffff;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px white; }
+    to { text-shadow: 0 0 20px gold; }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.sheikh {
+    width: 250px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+.panel {
+    color: white;
+    background: #248e32;
+    padding: 35px;
+    border-radius: 20px;
+    width: 420px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+#answers button {
+    width: 90%;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    background: linear-gradient(45deg, #0b2e0f, #84fab0);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#answers button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(45deg, #84f793, #84fab0);
+}
+
+.status {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.restart {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    background: gold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.hidden {
+    display: none;
+}
+.locked{
+    opacity:.5;
+    pointer-events:none;
+    filter:grayscale(100%);
+}
